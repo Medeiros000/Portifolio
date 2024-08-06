@@ -1,0 +1,26 @@
+* {
+    color: #fff;
+}
+
+body {
+    border: 0.2rem solid #fff;
+    background-color: #000;
+}
+
+a {
+    color: #fff;
+}
+
+input[type="button"] {
+    background-color: #000;
+}
+
+input[type="button"]:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.theme-switch {
+    background-color: #000;
+    border: 0.2rem solid #fff;
+}

@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'NeueMontreal-Regular';
+    src: url('../fonts/NeueMontreal-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'NeueMontreal-Medium';
+    src: url('../fonts/NeueMontreal-Medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'NeueMontreal-Light';
+    src: url('../fonts/NeueMontreal-Light.otf') format("opentype");
+}
+
+* {
+    font-family: NeueMontreal-Regular;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    border: 0.2rem solid #000;
+    background-color: #fff;
+    margin: 1.3rem;
+    /* height: 100dvh; */
+}
+
+a {
+    color: #000;
+}
+
+h3{
+    font-family: NeueMontreal-Medium;
+}
+
+.container {
+    border: none;
+    position: relative;
+}
+
+.header {
+    position: relative;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 1.2rem;
+}
+
+.me>* {
+    width: 80%;
+}
+
+.me>h1 {
+    width: 100%;
+}
+
+.me>h4 {
+    width: 100%;
+}
+
+.me>h1>a {
+    text-decoration: underline;
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.me>p {
+    font-family: NeueMontreal-Medium;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+}
+/* 
+ul.marker {
+    margin-left: 1rem;
+}
+
+ul.marker li {
+    width: 15rem;
+}
+
+ul.marker li::marker {
+    content: '⏵ ';
+    font-size: 1.5em;
+    font-family: NeueMontreal-Medium;
+} */
+
+.social {
+    display: flex;
+    justify-content: start;
+    padding: 0 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.social li {
+    margin-right: 0.5rem;
+}
+
+a.links span {
+    height: 2rem;
+    width: 2rem;
+    display: none;
+}
+
+a.links svg {
+    height: 1.5em;
+}
+
+a.links svg:hover {
+    fill: grey;
+}
+
+input[type="button"] {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    text-align: start;
+    padding: 0.1rem;
+    width: 50%;
+    margin: 0.2rem 0;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.content {
+    padding: 1.2rem;
+}
+
+.content>p {
+    font-family: NeueMontreal-Medium;
+    text-indent: 2rem;
+    margin: 1rem 0;
+}
+
+.theme-switch {
+    position: fixed;
+    height: 2rem;
+    width: 7rem;
+    bottom: 4.5rem;
+    left: -2rem;
+    padding: 0.4rem 0.5rem;
+    margin: 0;
+    background-color: #fff;
+    font-family: NeueMontreal-Medium;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: start;
+    transform: rotate(-90deg);
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.lang-option {
+    position: absolute;
+    height: 1rem;
+    width: fit-content;
+    top: 0rem;
+    right: 0rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.lang-option::selection > option {
+    font-family: NeueMontreal-Medium;
+    color: #000;
+    font-size: 0.8rem;
+    height: 1rem;
+    line-height: 1rem;
+    /* margin: auto 0;
+    padding: 0 0 0 0.2rem; */
+}
+
+.lang-switch {
+    position: absolute;
+    height: 2rem;
+    width: fit-content;
+    top: 0rem;
+    right: 0rem;
+    padding: 0.5rem;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+}
+
+.lang-switch span{
+    font-family: NeueMontreal-Medium;
+    font-size: 0.8rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin: auto 0;
+    padding: 0 0 0 0.2rem;
+}
+
+.lang-switch .flag{
+    height: 1rem;
+    width: 1rem;
+    padding: 0 0.2rem;
+}
+
+.project {
+    margin: 1rem 0;
+    cursor: pointer;
+}        
+
+.project .link {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.project p {
+    font-family: NeueMontreal-Medium;
+    text-indent: 1rem;
+    margin: 1rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.grayscale{
+    filter: grayscale(1);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        width: 60%;
+        margin: 1rem auto;
+    }
+}

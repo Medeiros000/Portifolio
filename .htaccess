@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# remove o nome do arquivo da URL
+RewriteRule ^$ index.php [L,QSA]
+
+# Bloqueia o acesso a arquivos .htaccess
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+# Bloqueia listagem de diretórios
+Options All -Indexes
+
+# Errors
+ErrorDocument 403 /portifolio/error.php
+ErrorDocument 404 /portifolio/error.php
+ErrorDocument 500 /portifolio/error.php
