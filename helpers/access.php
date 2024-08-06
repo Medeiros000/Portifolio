@@ -1,5 +1,5 @@
 <?php
-require_once 'Globais.php';
+require_once 'Globals.php';
 require_once 'config.php';
 function saveAccess()
 {

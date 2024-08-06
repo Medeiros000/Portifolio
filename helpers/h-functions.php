@@ -1,5 +1,5 @@
 <?php
-require_once 'helpers/Globais.php';
+require_once 'helpers/Globals.php';
 function h_head()
 {
     return '
